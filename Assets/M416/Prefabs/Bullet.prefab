@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 114867750186851760}
+  - component: {fileID: 8200000}
+  m_Layer: 0
+  m_Name: Bullet
+  m_TagString: Projectile
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1002 &100001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.969162, y: -6.286947, z: 2.9092188}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1002 &400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!82 &8200000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!1002 &9600001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!1002 &11400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: mHitsSounds.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: AudioReferences
+      value: 
+      objectReference: {fileID: 8253962, guid: f3594dedfe829764594d871f5b460a33, type: 2}
+    - target: {fileID: 0}
+      propertyPath: mHitsSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 21ae7520d267c9a499406f519a8b929b, type: 3}
+    - target: {fileID: 0}
+      propertyPath: ConcreteSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6cf913de62eac4c63ac123fcd579687d, type: 3}
+    - target: {fileID: 0}
+      propertyPath: MetalSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 44b54b1654e2046a6bb329e95ab7dec2, type: 3}
+    - target: {fileID: 0}
+      propertyPath: WaterSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 21ae7520d267c9a499406f519a8b929b, type: 3}
+    - target: {fileID: 0}
+      propertyPath: WoodSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 31903844de0ca438e8db5bf6b3fd4b87, type: 3}
+    - target: {fileID: 0}
+      propertyPath: GenericSound
+      value: 
+      objectReference: {fileID: 8300000, guid: b700248f6ac01a14093b6d1107fc0492, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+--- !u!1002 &100100001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &114867750186851760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f6aef2e5b764ed783cc3c8f964de43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directionFrom: {x: 0, y: 0, z: 0}
+  gunName: 
+  AudioReferences: {fileID: 8253962, guid: c3bb9a0705da445e1be384160eba1f04, type: 2}
+  concreteSound: {fileID: 8300000, guid: bfb041cf820984e7fa47937a4b24f102, type: 3}
+  genericSound: {fileID: 8300000, guid: cf0322daf57704303abbfc4ddc13b7d4, type: 3}
+  mPicht: {x: 1, y: 1.5}
+  bulletHoleObject: {fileID: 100000, guid: ef3f58ccb0cb2426ab55fea477e42cca, type: 2}
+  concrete:
+  - {fileID: 0}
+  - {fileID: 0}
+  generic:
+  - {fileID: 0}
+  - {fileID: 0}
+  concreteParticle: {fileID: 100002, guid: 6d77f0ee108574cbf82fba1f804bad2e, type: 2}
+  genericParticle: {fileID: 100000, guid: b5143917795eb4695b98413efba6e151, type: 2}
